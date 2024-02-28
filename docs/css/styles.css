@@ -42,3 +42,53 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+/* CSS for Contact Form Layout */
+#fs-frm {
+    width: 100%;
+    max-width: 400px; /* Adjust the width as needed */
+    margin: auto;
+}
+
+#fs-frm fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#fs-frm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#fs-frm input[type="text"],
+#fs-frm input[type="email"],
+#fs-frm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#fs-frm textarea {
+    height: 150px; /* Adjust the height as needed */
+}
+
+#fs-frm input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    #fs-frm {
+        max-width: 300px;
+    }
+}
