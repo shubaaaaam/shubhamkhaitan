@@ -14,21 +14,30 @@ function fetchBlogPosts() {
                     .then(response => response.text())
                     .then(content => {
                         // Parse filename to extract header and date
-                        const [header, date] = filename.split('_');
-                        const formattedDate = new Date(date.replace('.txt', '')).toDateString();
+                        const parts = filename.split('_');
+                        if (parts.length === 2) {
+                            const header = parts[0];
+                            const date = new Date(parts[1].replace('.txt', '')).toDateString();
 
-                        // Create blog post element
-                        const blogPost = document.createElement('div');
-                        blogPost.classList.add('blog-post');
-                        blogPost.innerHTML = `
-                            <h2>${header}</h2>
-                            <p>Date: ${formattedDate}</p>
-                            <p>${content}</p>
-                            <hr>
-                        `;
-                        blogPostsContainer.appendChild(blogPost);
+                            // Create blog post element
+                            const blogPost = document.createElement('div');
+                            blogPost.classList.add('blog-post');
+                            blogPost.innerHTML = `
+                                <h2>${header}</h2>
+                                <p>Date: ${date}</p>
+                                <p>${content}</p>
+                                <hr>
+                            `;
+                            blogPostsContainer.appendChild(blogPost);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching blog post:', error);
                     });
             });
+        })
+        .catch(error => {
+            console.error('Error fetching blog files:', error);
         });
 }
 
