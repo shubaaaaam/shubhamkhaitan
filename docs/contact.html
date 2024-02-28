@@ -8,26 +8,20 @@
 </head>
 <body>
     <div id="header-placeholder"></div>
-    
-    <main>
-        <h2>Get in Touch</h2>
-        <p>Feel free to contact us using the form below:</p>
-        <form action="#" method="post">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-    </main>
+
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+         action="https://formspree.io/f/meqykpjo" method="POST">
+        <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+            <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="name@domain.com" required="">
+            <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="Nice." required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
 
     <div id="footer-placeholder"></div>
 
