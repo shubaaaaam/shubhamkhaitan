@@ -6,12 +6,13 @@ body, h1, h2, p, ul {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #001b87; /* Navy blue header */
+    color: #fff; /* White text */
     padding: 20px;
 }
 
@@ -34,8 +35,8 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #001b87; /* Navy blue footer */
+    color: #fff; /* White footer text */
     padding: 10px 20px;
     position: fixed;
     bottom: 0;
@@ -59,6 +60,7 @@ footer {
 #fs-frm label {
     display: block;
     margin-bottom: 10px;
+    color: #333; /* Dark gray text */
 }
 
 #fs-frm input[type="text"],
@@ -80,8 +82,8 @@ footer {
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #001b87; /* Navy blue button */
+    color: #fff; /* White text */
     border-radius: 5px;
     cursor: pointer;
 }
