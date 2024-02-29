@@ -2,7 +2,7 @@
 
 // Define function to include header
 function includeHeader() {
-    fetch('header.html')
+    fetch('templates/header.html')
         .then(response => response.text())
         .then(html => {
             document.getElementById('header-placeholder').innerHTML = html;
@@ -11,7 +11,7 @@ function includeHeader() {
 
 // Define function to include footer
 function includeFooter() {
-    fetch('footer.html')
+    fetch('templates/footer.html')
         .then(response => response.text())
         .then(html => {
             document.getElementById('footer-placeholder').innerHTML = html;
@@ -20,7 +20,7 @@ function includeFooter() {
 
 // Define function to include favicon
 function includeFavicon() {
-    fetch('favicon.html')
+    fetch('templates/favicon.html')
         .then(response => response.text())
         .then(html => {
             document.getElementById('favicon-placeholder').innerHTML = html;
