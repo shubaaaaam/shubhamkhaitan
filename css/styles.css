@@ -16,7 +16,7 @@ header {
     padding: 20px;
 }
 
-header h1 {
+header h1 a {
     color: #fff; /* Set color to white */
     text-decoration: none; /* Remove underline */
 }
@@ -42,7 +42,7 @@ main {
 footer {
     background-color: #001b87; /* Navy blue footer */
     color: #fff; /* White footer text */
-    padding: 10px 0px;
+    padding: 0px 0px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -55,11 +55,7 @@ footer p {
 
 .social-icons {
     display: inline-block;
-}
-
-/* Apply margin to the left of each icon except the first one */
-.social-icons:not(:first-child) {
-    margin-left: 10px; /* Adjust spacing between icons */
+    margin-right: 10px; /* Adjust spacing between icons */
 }
 
 .social-icons a {
@@ -70,7 +66,7 @@ footer p {
     width: 22px; /* Adjust icon size */
     height: auto;
     margin-right: 30px; /* Adjust spacing between icons */
-    filter: brightness(0.99);
+    filter: brightness(0.95);
 }
 
 /* CSS for Contact Form Layout */
