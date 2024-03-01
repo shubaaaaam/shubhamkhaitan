@@ -17,8 +17,8 @@ header {
 }
 
 header h1 a {
-    color: #fff; /* Set color to white */
-    text-decoration: none; /* Remove underline */
+    color: #fff !important; /* Set color to white */
+    text-decoration: none !important; /* Remove underline */
 }
 
 nav ul {
