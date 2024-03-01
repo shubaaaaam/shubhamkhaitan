@@ -16,6 +16,11 @@ header {
     padding: 20px;
 }
 
+header h1 {
+    color: #fff; /* Set color to white */
+    text-decoration: none; /* Remove underline */
+}
+
 nav ul {
     list-style-type: none;
 }
@@ -50,7 +55,11 @@ footer p {
 
 .social-icons {
     display: inline-block;
-    margin-right: 10px; /* Adjust spacing between icons and footer text */
+}
+
+/* Apply margin to the left of each icon except the first one */
+.social-icons:not(:first-child) {
+    margin-left: 10px; /* Adjust spacing between icons */
 }
 
 .social-icons a {
