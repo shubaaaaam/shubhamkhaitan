@@ -58,9 +58,10 @@ footer p {
 }
 
 .social-icons img {
-    width: 30px; /* Adjust icon size */
+    width: 15px; /* Adjust icon size */
     height: auto;
-    margin-right: 10px; /* Adjust spacing between icons */
+    margin-right: 30px; /* Adjust spacing between icons */
+    filter: brightness(0.7);
 }
 
 /* CSS for Contact Form Layout */
