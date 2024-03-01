@@ -47,7 +47,7 @@ main {
 footer {
     background-color: #001b87; /* Navy blue footer */
     color: #fff; /* White footer text */
-    padding: 10px 10px;
+    padding: 10px 0px;
     position: fixed;
     bottom: 0;
     width: 100%;
