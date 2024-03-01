@@ -44,6 +44,25 @@ footer {
     text-align: center;
 }
 
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+.social-icons {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons and footer text */
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust icon size */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between icons */
+}
+
 /* CSS for Contact Form Layout */
 #fs-frm {
     width: 100%;
